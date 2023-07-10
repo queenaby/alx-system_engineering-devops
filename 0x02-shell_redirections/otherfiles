@@ -1,0 +1,14 @@
+#!/bin/bash
+
+file=(
+1-confused_smiley
+3-twofiles
+4-lastlines
+)
+
+for file in "${file[@]}"
+do
+   echo '#!/bin/bash' > "$file"
+chmod +x "$file"
+done
+ 
